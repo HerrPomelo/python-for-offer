@@ -1,0 +1,51 @@
+#从右上角开始找起
+# -*- coding:utf-8 -*-
+class Solution:
+    # array 二维列表
+    def Find(self, target, array):
+        # write code here
+        h=0#len（array）行数
+        l=len(array[0])-1#列数减一
+        if array==None:
+            return False
+        while l<=len(array[0])-1 and h>=0:
+            if array[h][l]==target:
+                return True
+            elif array[h][l]>target:
+                l=l-1
+            else:
+                h=h+1
+        return False
+#您的代码已保存
+#答案错误:您提交的程序没有通过所有的测试用例
+#case通过率为11.76%
+
+#测试用例:
+#5,[[1,2,8,9],[2,4,9,12],[4,7,10,13],[6,8,11,15]]
+
+#对应输出应该为:
+
+#false
+
+#你的输出为:
+
+#list index out of range
+
+
+
+
+
+#从头找起
+# -*- coding:utf-8 -*-
+class Solution:
+    # array 二维列表
+    def Find(self, target, array):
+        # write code here
+        h=len(array)
+        l=len(array[0])
+        if array==None:
+            return False
+        for i in range(h):
+            for j in range(l):
+                if array[i][j]==target:
+                    return True
