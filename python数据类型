@@ -17,7 +17,7 @@ list.extend(L)向列表中追加另一个列表L
 list.reverse()将列表中成员的顺序颠倒
 list.index(x)获得参数x在列表中的位置
 list.sort()将列表中的成员排序
-list.insert()向列表中插入数据insert(a,b)向列表中插入数据
+list.insert()向列表中插入数据insert(a,b)向列表中插入数据 L.insert(index,obj)index -- 对象obj需要插入的索引值,obj -- 要插入列表中的对象。
 
 
 （二）元组：
